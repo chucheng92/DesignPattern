@@ -8,4 +8,12 @@ public class GarageDoor {
 	public void down() {
 		System.out.println("Garage door is close.");
 	}
+	
+	public void lightOn() {
+		System.out.println("Garage light is on");
+	}
+
+	public void lightOff() {
+		System.out.println("Garage light is off");
+	}
 }
