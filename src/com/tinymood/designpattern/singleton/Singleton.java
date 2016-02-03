@@ -19,6 +19,8 @@ public class Singleton {
 	}
 	
 	// 直接做法
+//	private static Singleton uniqueInstance;
+
 	public static synchronized Singleton getInstance2() {
 		if (uniqueInstance == null) {
 			uniqueInstance = new Singleton();
@@ -27,5 +29,8 @@ public class Singleton {
 	}
 	
 	// 急加载
-//	private static Singleton uniqueInstance = new Singleton();
+//private static Singleton uniqueInstance = new Singleton();
+	public static synchronized Singleton getInstance3() {
+		return uniqueInstance;
+	}
 }
