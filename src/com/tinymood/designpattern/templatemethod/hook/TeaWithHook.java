@@ -2,6 +2,7 @@ package com.tinymood.designpattern.templatemethod.hook;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class TeaWithHook extends CaffeineBeverageWithHook {
  
@@ -27,7 +28,7 @@ public class TeaWithHook extends CaffeineBeverageWithHook {
 	private String getUserInput() {
 		// get the user's response
 		String answer = null;
-
+		
 		System.out.print("Would you like lemon with your tea (y/n)? ");
 
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
