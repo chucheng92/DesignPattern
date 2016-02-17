@@ -37,11 +37,11 @@ public class CompositeIterator implements Iterator<MenuComponent> {
 	
 	/*
 	 * Java8中不在需要实现remove方法
-	 *
+	 */
 	public void remove() {
 		throw new UnsupportedOperationException();
 	}
-	*/
+	
 }
 
 

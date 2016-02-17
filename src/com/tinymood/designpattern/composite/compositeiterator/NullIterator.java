@@ -15,8 +15,9 @@ public class NullIterator implements Iterator<MenuComponent> {
 	/*
 	 * Java8不需要实现remove方法
 	 * 
+	 */
 	public void remove() {
 		throw new UnsupportedOperationException();
 	}
-	*/
+	
 }

@@ -30,10 +30,11 @@ public class DinerMenuIterator implements Iterator<MenuItem> {
 	/* 
 	 * Java 8中不需要实现remove方法
 	 * 
-	 * 
+	 *
+	 */
 	public void remove() {
 		throw new UnsupportedOperationException(
 			"Alternating Diner Menu Iterator does not support remove()");
 	}
-	*/
+	
 }
