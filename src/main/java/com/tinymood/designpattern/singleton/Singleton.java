@@ -47,17 +47,17 @@ public class Singleton {
 	
 	
 	// 4. 急加载
-	/*
+	
 	private static final Singleton uniqueInstance = new Singleton();
 	
 	public static synchronized Singleton getInstance3() {
 		return uniqueInstance;
 	}
-	*/
+	
 	
 	// 5.静态内部类的方式 懒加载
 	// 线程安全 高效 不依赖Java版本
-	/*
+	
 	private static class SingletonHolder {
 		private static final Singleton INSTANCE = new Singleton();
 	}
@@ -65,5 +65,5 @@ public class Singleton {
 	public static final Singleton getInstance() {
 		return SingletonHolder.INSTANCE;
 	}
-	*/
+	
 }
