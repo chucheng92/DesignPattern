@@ -1,5 +1,6 @@
-/bin／
+/bin
 bin/*
 .idea/
 .settings/
 nowcoder.iml
+*.iml

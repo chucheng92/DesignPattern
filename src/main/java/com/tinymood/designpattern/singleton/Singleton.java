@@ -32,18 +32,18 @@ public class Singleton {
 	// 3.双重检查加锁 懒加载
 	// 线程安全（Java5以后）
 	// volatile禁止指令重排序Java5支持
-	private volatile static Singleton uniqueInstance;
-
-	public static Singleton getInstance() {
-		if (uniqueInstance == null) {
-			synchronized (Singleton.class) {
-				if (uniqueInstance == null) {
-					uniqueInstance = new Singleton();
-				}
-			}
-		}
-		return uniqueInstance;
-	}
+//	private volatile static Singleton uniqueInstance;
+//
+//	public static Singleton getInstance() {
+//		if (uniqueInstance == null) {
+//			synchronized (Singleton.class) {
+//				if (uniqueInstance == null) {
+//					uniqueInstance = new Singleton();
+//				}
+//			}
+//		}
+//		return uniqueInstance;
+//	}
 	
 	
 	// 4. 急加载
